@@ -1,20 +1,17 @@
-# 🏮 FrameMake 
-
-![Logo](https://elinux.org/images/thumb/e/ee/Arrayfire_logo_symbol.png/300px-Arrayfire_logo_symbol.png)
-
+# New APi for Luciernagas | APP and WEB 
 
 ## 🚀 About Me
-I'm a full stack developer...
+APP and WEB
 
 ## Description
 
-[Count](https://github.com/nestjs/nest) This is a backend framework with features to automate the creation of programs.
+This is a backend for app and web.
 
 ## Installation
 
 ```bash
-$ git clone https://github.com/andrescuello7/framework-server.git
-$ cd framework-server
+$ git clone https://github.com/andrescuello7/luciernaga-api
+$ cd luciernaga-api
 
 $ npm install
 ```
