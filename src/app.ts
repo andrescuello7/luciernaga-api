@@ -1,7 +1,9 @@
 import express from "express";
 import bodyParser from 'body-parser'
-import MySqlRoutes from "./mysql/mysql_router";
-import MongoRoutes from "./mongo/mongo_router";
+import taskRoutes from "./task/task_router";
+import userRoutes from "./user/user_router";
+import authRoutes from "./auth/auth_router";
+import historyRoutes from "./history/history_router";
 
 import { DataService } from "../utils/manager/data_services";
 export class App {
@@ -20,8 +22,10 @@ export class App {
     }
 
     routes() {
-        this.app.use("/api/mongo", MongoRoutes)
-        this.app.use("/api/mysql", MySqlRoutes)
+        this.app.use("/api/user", userRoutes)
+        this.app.use("/api/auth", authRoutes)
+        this.app.use("/api/task", taskRoutes)
+        this.app.use("/api/history", historyRoutes)
     }
 
     listen() {
